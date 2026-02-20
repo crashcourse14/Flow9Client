@@ -138,6 +138,6 @@ function runGame() {
     const top = (window.screen.height / 2) - (height / 2);
 
     const features = `width=${width},height=${height},left=${left},top=${top},resizable=yes,scrollbars=yes`;
-    window.open('game.html', '_blank', features);
+    window.open('/version/game.html', '_blank', features);
     
 }
