@@ -1,0 +1,279 @@
+body {
+    background: url('/img/background.png');
+    background-size: cover;
+    font-family: "Arial", sans-serif;
+    color: white;
+    margin: 0;
+}
+
+.sidebar {
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    margin-left: 0;
+    height: 100%;
+    width: 120px;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    border-right: 1px solid #223;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+hr {
+    background-color: #223;
+    color: #223;
+    height: 1px;
+    border: none;
+}
+
+
+.top-nav img {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+.title {
+    font-size: xxx-large;
+}
+
+.closeBTN {
+    transition: 0.5s;
+    border: none;
+    color: white;
+    top: 20px;
+    right: 20px;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px); 
+    border-radius: 5px;
+    font-size: larger;
+    border: 1px solid #223;
+}
+
+
+.closeBTN:hover {
+    transition: .5s;
+    background-color: #0c1d2c;
+}
+
+main {
+    margin-top: 120px;
+    margin-left: 0;
+    opacity: 0;
+    animation: fadeIn2 0.8s ease forwards;
+    width: calc(100% - 0px);  
+    box-sizing: border-box;
+}
+
+@media screen and (min-width: 1000px) { 
+
+    #newsScreen {
+        margin-top: 120px;
+        margin-left: 250px;
+        opacity: 0;
+        animation: fadeIn2 0.8s ease forwards;
+        overflow-y: auto;
+    }
+
+    #helpScreen {
+        margin-top: 120px;
+        margin-left: 250px;
+        opacity: 0;
+        animation: fadeIn2 0.8s ease forwards;
+    }
+
+    #settingsScreen {
+        margin-top: 120px;
+        margin-left: 250px;
+        opacity: 0;
+        animation: fadeIn2 0.8s ease forwards;
+        overflow-y: auto;
+    }
+
+    #selectVerScreen {
+        margin-top: 120px;
+        margin-left: 250px;
+        opacity: 0;
+        animation: fadeIn2 0.8s ease forwards;
+        overflow-y: auto;
+    }
+}
+
+.launcher {
+    width: 800px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;  /* stack children vertically */
+    align-items: center;
+}
+
+
+.launchBTN {
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    border: none;
+    width: 220px;
+    height: 60px;
+    text-align: center;
+    display: flex;
+    justify-content: center; 
+    justify-self: center;
+    align-items: center;
+    font-size: 20px;
+    margin-top: 80px;
+    border: 2px solid #333;
+}
+
+.launchBTN:hover {
+    border: 2px solid #333;
+}
+
+@keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+            color: white;
+            font-size: 45px;
+        }
+    }
+  
+    #icon1, #icon2, #icon3, #icon4 {
+        opacity: 0;
+        animation: fadeIn 0.8s ease forwards;
+    }
+  
+    #icon1 {
+        animation-delay: 0s;
+    }
+  
+    #icon2 {
+        animation-delay: 0.4s;
+    }
+  
+    #icon3 {
+        animation-delay: 0.8s;
+    }
+
+    #icon4 {
+        animation-delay: 1.2s;
+}
+
+@keyframes fadeIn2 {
+    from {
+        opacity: 0;
+        transform: translateY(5px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        color: white;
+    }
+}
+
+.settingClickable {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 300px;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    width: 300px;
+    height: 60px;
+    border-radius: 5px;
+    border: 1px solid #223;
+    justify-content: center;
+    text-align: center;
+    margin-left: 200px;
+}
+
+.setting {
+    display: flex;
+}
+
+.settingTitle {
+    max-width: 300px;
+    width: 300px;
+}
+
+button {
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    border: none;
+    color: white;
+    border-radius: 5px;
+    height: 40px;
+    width: 150px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+.parSerText {
+    margin-left: 20px;
+}
+
+
+.buttonCont {
+    display: flex;
+    margin: 0;
+}
+
+.versions {
+    display: flex;
+}
+
+.version {
+    background-image: url('/img/1_21.png');
+    background-size: cover;
+    height: 200px;
+    width: 400px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    font-size: 40px;
+    border-radius: 5px;
+    -webkit-text-stroke: 1px black;
+}
+
+.version2 {
+    background-image: url('/img/1_18.png');
+    background-size: cover;
+    height: 200px;
+    width: 400px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    font-size: 40px;
+    border-radius: 5px;
+    -webkit-text-stroke: 1px black;
+    margin-left: 20px;
+}
+
+#version {
+    transition: .5s;
+}
+
+#version:hover {
+    transition: .5s;
+    width: 420px;
+    height: 220px;
+}
+
+.currentGameVersion {
+    cursor: pointer;
+}

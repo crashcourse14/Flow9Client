@@ -2,7 +2,6 @@
 
 Liquid Client is an Eaglercraft 1.5.2 client. It includes a custom loading screen (inspiration from Resent 5.0), main menu, and mod menu. Also, for any server that supports 1.5.2 will get their own background image. 
 
-![Servers that support 1.5.2 with their custom background](/images/servers.png)
 
 ## Extra
 The client is still in its first version, and bugs and game crashes will be common (although we have not seen any yet). 
